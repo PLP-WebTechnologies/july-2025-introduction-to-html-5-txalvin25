@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>User Registration</h1>
+  </header>
+
+  <main>
+    <!-- List Example -->
+    <section>
+      <h2>Benefits of Joining</h2>
+      <ul>
+        <li>Access to exclusive content</li>
+        <li>Monthly newsletter</li>
+        <li>Community events</li>
+      </ul>
+    </section>
+
+    <!-- Table Example -->
+    <section>
+      <h2>Plan Comparison</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Price</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$0</td>
+            <td>Limited Access</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>$10</td>
+            <td>All Access</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media Example -->
+    <section>
+      <h2>Intro Video</h2>
+      <video controls width="300">
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Register Now</h2>
+      <form action="/submit" method="post" autocomplete="on">
+        <label>
+          Full Name:
+          <input type="text" name="name" placeholder="Jane Doe" required>
+        </label><br><br>
+
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label><br><br>
+
+        <label>
+          Password:
+          <input type="password" name="password" required>
+        </label><br><br>
+
+        <label>
+          Age:
+          <input type="number" name="age" min="13" max="120" required>
+        </label><br><br>
+
+        <label>
+          Gender:
+          <select name="gender" required>
+            <option value="">Choose...</option>
+            <option>Female</option>
+            <option>Male</option>
+            <option>Other</option>
+          </select>
+        </label><br><br>
+
+        <label>
+          Country:
+          <input type="text" name="country" value="USA" readonly>
+        </label><br><br>
+
+        <label>
+          Bio:
+          <textarea name="bio" placeholder="Tell us something about yourself..."></textarea>
+        </label><br><br>
+
+        <label>
+          Upload Profile Picture:
+          <input type="file" name="photo" accept="image/*">
+        </label><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Demo</p>
+  </footer>
+
+</body>
+</html>
